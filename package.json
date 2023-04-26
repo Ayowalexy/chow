@@ -6,7 +6,7 @@
     "dev": "nx serve",
     "build-api": "nx build api",
     "start-api": "nx serve api",
-    "build": "nx run-many --target=build",
+    "build": "nx build waitlist --target=build",
     "test": "nx run-many --target=test",
     "build-waitlist": "nx build waitlist"
   },
