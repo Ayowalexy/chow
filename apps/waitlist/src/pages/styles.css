@@ -1,0 +1,203 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+  font-family: 'pangram-bold';
+  src: url('../public/fonts/pangram-black.otf');
+}
+
+@font-face {
+  font-family: 'pangram-medium';
+  src: url('../public/fonts/pangram-medium.otf');
+}
+
+@font-face {
+  font-family: 'pangram-regular';
+  src: url('../public/fonts/pangram-regular.otf');
+}
+
+@font-face {
+  font-family: 'pangram-light';
+  src: url('../public/fonts/pangram-light.otf');
+}
+
+@font-face {
+  font-family: 'courgette-regular';
+  src: url('../public/fonts/courgette-regular.ttf');
+}
+
+
+.anim {
+  animation-name: anime;
+  animation-duration: 4500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  opacity: 0.2;
+
+}
+
+.anim1 {
+  animation-name: anime1;
+  animation-duration: 4500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  opacity: 0.2;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes anime1 {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-200px);
+  }
+}
+
+.one {
+  animation-name: one;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: all ease 500ms;
+  animation-delay: 300ms;
+
+
+}
+
+@keyframes one {
+  /* from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  } */
+}
+
+.one:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.two:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  ;
+  transform: scale(1.1);
+}
+
+.two {
+  animation-name: two;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 500ms;
+  transition: all ease 200ms;
+
+}
+
+@keyframes two {
+  /* from {
+    opacity: 1;
+  } 
+  to {
+    opacity: 0;
+  } */
+}
+
+.sketch {
+  background: url(../public/images/pngs/underline.png);
+  background-repeat: no-repeat;
+  background-size: 100% 0.75rem;
+  padding-top: 22px;
+  z-index: 10;
+  background-position: bottom;
+}
+
+.sketch2 {
+  background: url(../public/images/pngs/Vector00.png);
+  background-repeat: no-repeat;
+  background-size: 100% 0.75rem;
+  padding-top: 22px;
+  z-index: 10;
+  background-position: bottom;
+}
+
+.sketch3 {
+  background: url(../public/images/svgs/underline.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 0.75rem;
+  padding-top: 22px;
+  z-index: 10;
+  background-position: bottom;
+}
+
+.user_bg {
+  background-size: 120px;
+}
+
+.scroll {
+  direction: rtl;
+  overflow: auto;
+  padding-left: 60px;
+}
+
+.scroll div {
+  direction: ltr;
+}
+
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #EEEEEE;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background: #EEEEEE;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #D87023;
+}
+
+.btn:hover {
+  background-color: #1b8e73;
+  transition: all 200ms ease;
+}
+
+.thumbs {
+  height: 5px;
+  width: 5px;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (min-width: 763px) {
+  .thumbs {
+    height: 13px;
+    width: 13px;
+  }
+}
+
+.icon {
+  transition: all 500ms ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+

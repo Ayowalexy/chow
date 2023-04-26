@@ -1,0 +1,41 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "api",
+        "image": "645794497692.dkr.ecr.us-east-1.amazonaws.com/chow-api:latest",
+        "memory": 512,
+        "memoryReservation": 256,
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 6000
+          }
+        ],
+        "environment": [
+          {
+            "name": "NODE_ENV",
+            "value": "staging"
+          },
+          {
+            "name": "PORT",
+            "value": 6000
+          },
+          {
+            "name": "MONGO_PATH",
+            "value": "mongodb+srv://DannyPhlayme:B5Ai14SFTdWEIVDM@chow.fl7chen.mongodb.net/?retryWrites=true&w=majority"
+          }
+        ],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/chow-api-logs",
+            "awslogs-region": "us-east-1",
+            "awslogs-stream-prefix": "chow-api"
+          }
+        }
+      }
+    ]
+  }
+  
